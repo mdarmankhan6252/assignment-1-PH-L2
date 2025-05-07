@@ -33,3 +33,45 @@ createError("Hey Bro, Something went wrong")
 ```
 
 
+## 02. Provide an example of using union and intersection types in TypeScript.
+
+- <b>Union</b>: A Union is a special type in TypeScript that allows a variable to hold values of different types. It uses the pipe symbol (|) to separate the types.
+
+```ts
+let myValue: string | number;
+value = "Hello Typescript"
+value = 143
+```
+##### in the example we can see that we have declired a variable name is myValue and we have set the type of the variable string or number. That means it will take any kinds of number and string value; and this icon ( | ) is called union type in typescript.
+
+- <b>Intersection</b>: An Intersection is a special type in TypeScript that combines multiple types into one. It uses the ampersand symbol (&) to merge the properties of two or more types.
+
+
+```ts
+type Person = {
+  name: string;
+};
+
+type Employee = {
+  employeeId: number;
+};
+
+type Staff = Person & Employee;
+
+const staffMember: Staff = {
+  name: "Arman",
+  employeeId: 101,
+};
+
+```
+##### In the example, we have created two types: Person and Employee. Then we used the ampersand symbol (&) to combine them into a new type called Staff. That means Staff must have all the properties from both Person and Employee. This is called intersection type in TypeScript.
+
+
+
+
+
+
+
+
+
+
