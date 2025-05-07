@@ -1,5 +1,7 @@
 ## 01. Explain the difference between any, unknown, and never types in TypeScript.
 
+#### any unknown and never are datatype in typescript but there are some difference between them. I have included some difference between them and has been given below:
+
 - <p>The <b>any</b> type refer to a value that can be of any kind of type. Suppose, the user inputs a string, number, or boolean, typescript will not mind. Not only that, the <b>any</b> type disables all type checking for the variable. As a result, the typescript compiler does not know what the actual type of the variable is, and we can assign any kind of value to it without getting an error.</p>
 
 ```ts
